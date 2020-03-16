@@ -1,0 +1,33 @@
+motd:
+  - WAITING_FOR_PLAYERS
+  - WAITING
+  - STARTING
+groups:
+  MM:
+    JEMM1:
+      ip: 127.0.0.1
+      port: 25581
+    JEMM2:
+      ip: 127.0.0.1
+      port: 25582
+  BB:
+    JEBB1:
+      ip: 127.0.0.1
+      port: 25661
+  IW:
+    JEIW1:
+      ip: 127.0.0.1
+      port: 25691
+    JEIW2:
+      ip: 127.0.0.1
+      port: 25692
+    JEIW3:
+      ip: 127.0.0.1
+      port: 25693
+  VD:
+    JEVD1:
+      ip: 127.0.0.1
+      port: 25701
+    JEVD2:
+      ip: 127.0.0.1
+      port: 25702
