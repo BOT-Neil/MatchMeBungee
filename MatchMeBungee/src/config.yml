@@ -1,7 +1,9 @@
+updatespeedms: 100
+timeoutms: 50
 motd:
-  - WAITING_FOR_PLAYERS
-  - WAITING
-  - STARTING
+ WAITING_FOR_PLAYERS:
+ WAITING:
+ STARTING:
 groups:
   MM:
     JEMM1:

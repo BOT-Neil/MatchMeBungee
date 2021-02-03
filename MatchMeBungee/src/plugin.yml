@@ -1,4 +1,9 @@
-name: MatchMeBungee
-main: za.botneil.bungeecore.MatchMe
+name: MatchMeLobby
 version: 1.0
-author: botneil
+description: lobby plugin by trash
+author: Trashulius#9882(trash/botneil)
+main: za.botneil.bungeecore.Spigot
+commands:
+  matchme:
+    description: Connect to server group
+    usage: /matchme

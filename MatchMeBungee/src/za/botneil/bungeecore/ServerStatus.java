@@ -13,19 +13,20 @@ import java.util.Comparator;
 import java.util.Objects;
 
 public class ServerStatus implements Comparable<ServerStatus>{
-
     private String name, ip, status;
 
     private int port;
     private Integer playercount;
     private int maxpcount;
+    private int timoutms;
     private Boolean Open;
-    public ServerStatus(String name, String ip, int port) {
+    public ServerStatus(String name, String ip, int port,int timeoutms) {
         this.setClosed();
         this.playercount = 0;
         this.name = name;
         this.ip = ip;
         this.port = port;
+        this.timoutms = timeoutms;
     }
     public void setOpen(){
         this.Open = true;
@@ -80,9 +81,9 @@ public class ServerStatus implements Comparable<ServerStatus>{
         DataOutputStream dataOutputStream;
         InputStream inputStream;
         InputStreamReader inputStreamReader;
-        socket.setSoTimeout(1000);
+        socket.setSoTimeout(timoutms);
 
-        socket.connect(new InetSocketAddress(ip, port), 1000);
+        socket.connect(new InetSocketAddress(ip, port), timoutms);
         outputStream = socket.getOutputStream();
         dataOutputStream = new DataOutputStream(outputStream);
         inputStream = socket.getInputStream();
